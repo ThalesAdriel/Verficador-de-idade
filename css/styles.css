@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63);
+    font-size: 1.7rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 3.7rem;
+    color: aliceblue;
+    text-align: end;
+    cursor: default;
+}
+h2{
+    display: flex;
+    text-align: end;
+    cursor: default;
+}
+legend{
+    padding: 1rem;
+}
+fieldset{
+    border: none;
+}
+input#ano-nascimento{
+    padding: 2rem;
+    width: 39rem;
+}
+#form-control{
+    background-color: aliceblue;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding: 2rem;
+    transform: scale(.9,.9);
+}
+#fieldset-control{
+    background-color: rgb(195, 195, 195);
+    border-radius: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#button-control{
+    display: flex;
+    justify-content: center;
+}
+#button-control > button{
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border-style: none;
+    background-color: #449850;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    letter-spacing: .2rem;
+}
+#button-control > button:hover{
+    letter-spacing: .7rem;
+    border-radius: 1rem 10rem 1rem 10rem;
+    transition: .2s;
+    transform: scale(1.2,1.2);
+    animation: element_blink 1s infinite;
+}
+#button-control > button:not(button:hover){
+    transition: .2s;
+}
+#ask-div-control{
+    padding: 1rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20rem;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+.wave {
+    fill: #FFFFFF;
+}
+
+
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 2rem;
+    }
+    #form-control{
+        transform: scale(1,1);
+    }
+}
+
+
+@keyframes element_blink{
+    0%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+}

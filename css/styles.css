@@ -40,6 +40,9 @@ input#ano-nascimento{
     padding: 2rem;
     width: 39rem;
 }
+p{
+    cursor: default;
+}
 #form-control{
     background-color: aliceblue;
     border-radius: 0rem 0rem 1rem 1rem;
@@ -62,17 +65,17 @@ input#ano-nascimento{
     border-radius: 1rem;
     font-size: 2rem;
     border-style: none;
-    background-color: #449850;
+    background-color: #7a17c6;
     color: #FFFFFF;
     margin-top: 2rem;
     letter-spacing: .2rem;
 }
 #button-control > button:hover{
     letter-spacing: .7rem;
-    border-radius: 1rem 10rem 1rem 10rem;
+    border-radius: 40rem;
     transition: .2s;
     transform: scale(1.2,1.2);
-    animation: element_blink 1s infinite;
+    animation: element_blink 1000ms infinite;
 }
 #button-control > button:not(button:hover){
     transition: .2s;
@@ -84,7 +87,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 20rem;
-    color: rgb(0, 0, 0);
+    color: #7a17c6;
     position: relative;
 }
 
@@ -122,7 +125,7 @@ footer{
 
 @keyframes element_blink{
     0%{
-        filter: brightness(150%);
+        filter: brightness(130%);
     }
     100%{
         filter: brightness(100%);

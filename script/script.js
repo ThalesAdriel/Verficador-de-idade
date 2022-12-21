@@ -33,17 +33,17 @@ function verificar(){
             genero = 'Mulher'
             if (idade > 0 && idade <= 12){
                 //criança
-                img.setAttribute('src',`assets/famale/crianca-famale${random}.jpeg`)
+                img.setAttribute('src',`assets/female/crianca-female${random}.jpeg`)
             } else if (idade <= 21){
                 //adolescente
-                img.setAttribute('src',`assets/famale/ado-famele${random}.jpeg`)
+                img.setAttribute('src',`assets/female/ado-femele${random}.jpeg`)
                 
             } else if (idade <= 60){
                 //adulto
-                img.setAttribute('src',`assets/famale/adulto-famele${random}.jpeg`)
+                img.setAttribute('src',`assets/female/adulto-femele${random}.jpeg`)
             }   else if (idade <= 110){
                 //idoso
-                img.setAttribute('src',`assets/famale/idoso-famele${random}.jpeg`)
+                img.setAttribute('src',`assets/female/idoso-femele${random}.jpeg`)
                 
             }
         }

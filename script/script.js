@@ -23,7 +23,7 @@ function verificar(){
                 img.setAttribute('src',`assets/male/ado-male${random}.jpeg`)
             } else if (idade <= 60){
                 //adulto
-                img.setAttribute('src',`assets/male/adulto${random}-male.jpeg`)
+                img.setAttribute('src',`assets/male/adulto-male${random}.jpeg`)
             }   else if (idade <= 110){
                 //idoso
                 img.setAttribute('src',`assets/male/idoso-male${random}.jpeg`)

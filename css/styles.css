@@ -47,7 +47,7 @@ p{
     background-color: aliceblue;
     border-radius: 0rem 0rem 1rem 1rem;
     padding: 2rem;
-    transform: scale(.9,.9);
+    transform: scale(.8,.8);
 }
 #fieldset-control{
     background-color: rgb(195, 195, 195);
@@ -86,14 +86,21 @@ p{
 footer{
     display: flex;
     justify-content: center;
-    padding: 20rem;
+    margin-top: -27rem;
     color: #7a17c6;
     position: relative;
 }
+img{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+    border-radius: 5rem;
+}
 
 
-.wave {
-    position: absolute;
+.wave{
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -113,12 +120,15 @@ footer{
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
     body{
         font-size: 2rem;
     }
     #form-control{
         transform: scale(1,1);
+    }
+    img{
+        margin-left: 23rem;
     }
 }
 
@@ -129,5 +139,12 @@ footer{
     }
     100%{
         filter: brightness(100%);
+    }
+}
+
+@keyframes on_click{
+    0%{
+        filter: brightness(170%);
+        transition: 1s;
     }
 }

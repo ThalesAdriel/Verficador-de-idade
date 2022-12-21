@@ -23,13 +23,17 @@
                         <p>Verificador de idades ⤵</p>
                     </legend>
                     <div id="label-and-input-control">
-                        <label id="" for="ano-nascimento">Ano do Nascimento:</label>
-                        <input type="text" name="" id="ano-nascimento" placeholder="Coloque seu ano de nascimento aqui:" required>
+                        <label id="ano_nsacimento-text" for="ano-nascimento">Ano do Nascimento:</label>
+                        <input type="number" name="" id="ano-nascimento" placeholder="Coloque seu ano de nascimento aqui:" min="0" required>
                         <label>Sexo:</label>
-                        <label><input value="male" id="male" name="sex" type="radio"> Masculino</label>
-                        <label><input value="femmale" id="female" name="sex" type="radio"> Feminino</label>
+                        <label>
+                            <input value="male" id="male" name="sex" type="radio"> Masculino
+                        </label>
+                        <label>
+                            <input value="female" id="female" name="sex" type="radio"> Feminino
+                        </label>
                         <div id="button-control">
-                            <button class="button" id="submit" type="submit">MODIFICAR</button>
+                            <button class="button" id="submit" type="submit" onclick="verificar()" >MODIFICAR</button>
                         </div>
                     </div>
                     <div id="ask-div-control">
@@ -48,5 +52,5 @@
     </div>
     <footer><h3>@DEV</h3></footer>
 </body>
-
+<script src="script/script.js"></script>
 </html>

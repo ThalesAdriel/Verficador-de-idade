@@ -112,7 +112,7 @@ img{
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
-    height: 500px;
+    height: 63rem;
     transform: rotateY(180deg);
 }
 .wave {

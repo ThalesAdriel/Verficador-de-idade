@@ -10,6 +10,7 @@
     
 }
 body{
+    animation: blink_page 0.5s alternate;
     background: linear-gradient(to right, #0f0c29, #302b63);
     font-size: 1.7rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -51,6 +52,7 @@ p{
 nav{
     display: flex;
     justify-content: center;
+    animation: blink_page none;
 }
 nav > a{
     display: inline-block;
@@ -172,5 +174,22 @@ img{
     }
     100%{
         filter: brightness(100%);
+    }
+}
+
+
+@keyframes blink_page{
+    0%{
+        transform: scaleY(70%);
+        opacity: 50%;
+    }
+    75%{
+        transition: 2s;
+        opacity: 70%;
+    }
+    100%{
+        transform: scaleY(100%);
+        opacity: 100%;
+        transition: 2s;
     }
 }

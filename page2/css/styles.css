@@ -10,7 +10,7 @@
     
 }
 body{
-    background: linear-gradient(to right, #0f0c29, #302b63);
+    background: linear-gradient(to right, #2D1115, #65334D);    
     font-size: 1.7rem;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -18,6 +18,7 @@ main{
     display: flex;
     justify-content: center;
 }
+
 h1{
     display: flex;
     justify-content: center;
@@ -39,9 +40,9 @@ fieldset{
 }
 label{
     display: flex;
-    padding: .5rem;
+    padding: 1rem;
 }
-input#ano-nascimento{
+input.contador{
     padding: 2rem;
     width: 39rem;
 }
@@ -56,24 +57,24 @@ nav > a{
     display: inline-block;
     cursor: pointer;
     padding: 1rem;
-    border-radius: 0rem 1rem 1rem 0rem;
+    border-radius: 1rem 0rem 0rem 1rem;
     color: #000000;
     margin-top: 2rem;
     letter-spacing: .2rem;
     text-decoration: none;
-    background-color:  rgb(195, 195, 195);
+    background-color: rgb(195, 195, 195);
 }
-nav > a:nth-child(1){
-    border-radius: 1rem 0rem 0rem 1rem;
+nav > a:nth-child(2){
+    border-radius: 0rem 1rem 1rem 0rem;
     background-color:  aliceblue;
     cursor: default;
 }
-nav> a:nth-child(2):hover{
+nav> a:nth-child(1):hover{
     letter-spacing: .3rem;
     transition: .2s;
     background-color:  aliceblue;
 }
-nav > a:nth-child(2):not(nav > a:hover){
+nav > a:nth-child(1):not(nav > a:hover){
     transition: .2s;
 }
 #form-control{
@@ -98,7 +99,7 @@ nav > a:nth-child(2):not(nav > a:hover){
     border-radius: 1rem;
     font-size: 2rem;
     border-style: none;
-    background-color: #7a17c6;
+    background-color: #F433AB;
     color: #FFFFFF;
     margin-top: 2rem;
     letter-spacing: .2rem;
@@ -120,17 +121,9 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: -27rem;
-    color: #7a17c6;
+    color: #F433AB;
     position: relative;
 }
-img{
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    border-radius: 5rem;
-    margin-left: 5rem;
-}
-
 
 .wave{
     position: static;
@@ -162,15 +155,5 @@ img{
     }
     img{
         margin-left: 23.5rem;
-    }
-}
-
-
-@keyframes element_blink{
-    0%{
-        filter: brightness(130%);
-    }
-    100%{
-        filter: brightness(100%);
     }
 }

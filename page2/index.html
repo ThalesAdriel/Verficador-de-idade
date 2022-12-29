@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="assets/favicon2.ico" type="image/x-icon">
-    <title>Verificador de idades</title>
+    <link rel="shortcut icon" href="../assets/favicon2.ico" type="image/x-icon">
+    <title>Contador de dinâmico</title>
 </head>
 
 <body>
     <header>
-        <h1>VERIFICADOR DE IDADES</h1>
+        <h1>CONTADOR DE DINÂMICO</h1>
     </header>
     <nav>
-        <a href="#">Verificador de idades</a>
-        <a href="page2/index.html">contador dinâmico</a>
+        <a href="../index.html">Verificador de idades</a>
+        <a href="#">contador dinâmico</a>
     </nav>
     <main>
         <section id="form-control">
@@ -24,18 +24,17 @@
             <div id="fieldset-control">
                 <fieldset>
                     <legend>
-                        <p>Verificador de idades ⤵</p>
+                        <p>Contador de dinâmico ⤵</p>
                     </legend>
                     <div id="label-and-input-control">
-                        <label id="ano_nsacimento-text" for="ano-nascimento">Ano do Nascimento:</label>
-                        <input type="number" name="ano-nascimento_" id="ano-nascimento" placeholder="Coloque seu ano de nascimento aqui:" min="0" required>
-                        <label>Sexo:</label>
-                        <label>
-                            <input value="male" id="male" name="sex" type="radio"> Masculino
-                        </label>
-                        <label>
-                            <input value="female" id="female" name="sex" type="radio"> Feminino
-                        </label>
+                        <label id="inicio" for="Contador" >Inicio:</label>
+                        <input type="number" name="inicio" id="inicio" class="contador" placeholder="Coloque o numero de inicio aqui:" required>
+
+                        <label id="fim" for="Contador">Fim:</label>
+                        <input type="number" name="fim" id="fim" class="contador" placeholder="Coloque o numero do fim aqui:" required>
+
+                        <label id="passo" for="Contador">Passo:</label>
+                        <input type="number" name="passo" id="passo" class="contador" placeholder="Coloque o passo que a sequencia deve seguir aqui:" required>
                         <div id="button-control">
                             <button class="button" id="submit" type="submit" onclick="verificar()" >MODIFICAR</button>
                         </div>

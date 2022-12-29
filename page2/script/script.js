@@ -10,10 +10,10 @@ function verificar(){
         while (inicio <= fim) {
             contador = contador+` 👉${inicio}`
             inicio+=passo
-            console.log(contador)
             resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
         }
-    } else if(inicio >=fim) {
+    } if (!!passo && inicio > fim) 
+    {
         while (inicio >= fim) {
             contador = contador+` 👉${inicio}`
             inicio-=passo
@@ -23,3 +23,4 @@ function verificar(){
         alert('[erro] por favor insira os dados corretamente.')
     }
 }
+

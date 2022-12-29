@@ -18,6 +18,7 @@ body{
 main{
     display: flex;
     justify-content: center;
+    margin-top: -6.1rem;
 }
 
 h1{
@@ -54,6 +55,7 @@ nav{
     display: flex;
     justify-content: center;
     animation: blink_page none;
+    transform: scale(.9,.9);
 }
 nav > a{
     display: inline-block;
@@ -154,9 +156,16 @@ footer{
 }
 
 
+
 @media screen and (min-width: 800px) {
+    main{
+        margin: 0 auto;
+    }
     body{
         font-size: 2rem;
+    }
+    nav{
+        transform: scale(1,1);
     }
     #form-control{
         transform: scale(1,1);
@@ -165,6 +174,7 @@ footer{
         margin-left: 23.5rem;
     }
 }
+
 
 @keyframes blink_page{
     0%{

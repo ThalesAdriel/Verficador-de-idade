@@ -116,6 +116,11 @@ nav > a:nth-child(1):not(nav > a:hover){
 }
 #ask-div-control{
     padding: 1rem;
+    max-width: 40rem;
+    max-height: 20rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 3rem;
+    overflow-y: scroll;
 }
 footer{
     display: flex;

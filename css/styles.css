@@ -18,6 +18,7 @@ body{
 main{
     display: flex;
     justify-content: center;
+    margin-top: -5rem;
 }
 h1{
     display: flex;
@@ -50,6 +51,7 @@ p{
     cursor: default;
 }
 nav{
+    transform: scale(.9,.9);
     display: flex;
     justify-content: center;
     animation: blink_page none;
@@ -156,8 +158,14 @@ img{
 
 
 @media screen and (min-width: 800px) {
+    main{
+        margin: 0 auto;
+    }
     body{
         font-size: 2rem;
+    }
+    nav{
+        transform: scale(1,1);
     }
     #form-control{
         transform: scale(1,1);

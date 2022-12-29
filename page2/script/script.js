@@ -4,6 +4,7 @@ function verificar(){
     let passo = Number(document.querySelector('input#passo').value)
     let resposta = document.querySelector('div#ask-div-control')
     let contador = ""
+    resposta.style['overflow-y'] = 'scroll'
 
     if (!!passo && inicio <= fim) 
     {

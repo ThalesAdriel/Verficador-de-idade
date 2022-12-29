@@ -1,5 +1,5 @@
 function verificar(){
-    let inicio = Number(document.querySelector('input#inicio').value)
+    let inicio = Number(document.querySelector('input#inicio').value )
     let fim = Number(document.querySelector('input#fim').value)
     let passo = Number(document.querySelector('input#passo').value)
     let resposta = document.querySelector('div#ask-div-control')

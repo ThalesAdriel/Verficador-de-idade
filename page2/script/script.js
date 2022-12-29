@@ -24,7 +24,7 @@ function verificar(){
     }
 
 
-    if(fim > 200){
+    if(fim > 50){
         resposta.style['overflow-y'] = 'scroll'
     } else {
         resposta.style['overflow-y'] = 'hidden'

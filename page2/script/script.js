@@ -9,16 +9,16 @@ function verificar(){
         while (inicio < fim) {
             contador = contador+`👉${inicio}`
             inicio+=passo
-            resposta.innerHTML = `Detectamos: ${contador}🚩`
+            resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
         }
         while (inicio > fim) {
             contador = contador+`👉${inicio}`
             inicio-=passo
-            resposta.innerHTML = `Detectamos: ${contador}🚩`
+            resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
         }
     } else {
         alert('[erro] por favor insira os dados corretamente.')
     }
 
-
+    
 }

@@ -5,19 +5,19 @@ function verificar(){
     let resposta = document.querySelector('div#ask-div-control')
     let contador = ""
 
-
-    if (!!passo) {
+    if (!!passo && inicio <= fim) 
+    {
         while (inicio <= fim) {
             contador = contador+` 👉${inicio}`
             inicio+=passo
-            resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
+            resposta.innerHTML = `Detectamos: ${contador} 🚩`
         }
-    } if (!!passo && inicio > fim) 
+    } else if (!!passo && inicio >= fim ) 
     {
         while (inicio >= fim) {
             contador = contador+` 👉${inicio}`
             inicio-=passo
-            resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
+            resposta.innerHTML = `Detectamos: ${contador} 🚩`
         }
     } else {
         alert('[erro] por favor insira os dados corretamente.')

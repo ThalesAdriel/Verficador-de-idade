@@ -5,13 +5,16 @@ function verificar(){
     let resposta = document.querySelector('div#ask-div-control')
     let contador = ""
 
+
     if (!!passo) {
-        while (inicio < fim) {
+        while (inicio <= fim) {
             contador = contador+` 👉${inicio}`
             inicio+=passo
+            console.log(contador)
             resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
         }
-        while (inicio > fim) {
+    } else if(inicio >=fim) {
+        while (inicio >= fim) {
             contador = contador+` 👉${inicio}`
             inicio-=passo
             resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
@@ -19,6 +22,4 @@ function verificar(){
     } else {
         alert('[erro] por favor insira os dados corretamente.')
     }
-
-    
 }

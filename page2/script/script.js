@@ -7,12 +7,12 @@ function verificar(){
 
     if (!!passo) {
         while (inicio < fim) {
-            contador = contador+`👉${inicio}`
+            contador = contador+` 👉${inicio}`
             inicio+=passo
             resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
         }
         while (inicio > fim) {
-            contador = contador+`👉${inicio}`
+            contador = contador+` 👉${inicio}`
             inicio-=passo
             resposta.innerHTML = `Detectamos: ${contador} 👉 ${fim}🚩`
         }

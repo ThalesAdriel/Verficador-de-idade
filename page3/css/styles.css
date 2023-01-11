@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    
+}
+body{
+    animation: blink_page 0.5s alternate;
+    background: linear-gradient(to right, #65647C, #8B7E74);    
+    font-size: 1.7rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: -6.1rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 3.7rem;
+    color: aliceblue;
+    text-align: end;
+    cursor: default;
+}
+h2{
+    display: flex;
+    text-align: end;
+    cursor: default;
+}
+legend{
+    padding: 1rem;
+}
+fieldset{
+    border: none;
+}
+label{
+    display: flex;
+    padding: 1rem;
+}
+input.contador{
+    padding: 2rem;
+    width: 39rem;
+}
+p{
+    cursor: default;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    animation: blink_page none;
+    transform: scale(.9,.9);
+}
+nav > a{
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem 0rem 0rem 0rem;
+    color: #000000;
+    margin-top: 2rem;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    background-color: rgb(195, 195, 195);
+    
+}
+nav > a:nth-child(2){
+    border-radius: 0rem 0rem 0rem 0rem;
+    background-color:  aliceblue;
+    cursor: default;
+    background-color: rgb(195, 195, 195);
+}
+nav> a:nth-child(1){
+    margin-left: 40rem;
+}
+nav> a:nth-child(1):hover{
+    letter-spacing: .3rem;
+    transition: .2s;
+    background-color:  aliceblue;
+    
+}
+nav > a:nth-child(1):not(nav > a:hover){
+    transition: .2s;
+}
+nav> a:nth-child(3){
+    border-radius: 0rem 1rem 0rem 0rem;
+    margin-right: 40rem;
+    background-color: aliceblue;
+    cursor: default;
+}
+nav> a:nth-child(2):hover{
+    letter-spacing: .3rem;
+    transition: .2s;
+    background-color:  aliceblue;
+    cursor: pointer;
+}
+nav > a:nth-child(2):not(nav > a:hover){
+    transition: .2s;
+}
+#form-control{
+    background-color: aliceblue;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding: 2rem;
+    transform: scale(.8,.8);
+}
+#fieldset-control{
+    background-color: rgb(195, 195, 195);
+    border-radius: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#button-control{
+    display: flex;
+    justify-content: center;
+}
+#button-control > button{
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border-style: none;
+    background-color: #F1D3B3;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    letter-spacing: .2rem;
+}
+#button-control > button:hover{
+    letter-spacing: .7rem;
+    border-radius: 40rem;
+    transition: .2s;
+    transform: scale(1.2,1.2);
+    animation: element_blink 1000ms infinite;
+}
+#button-control > button:not(button:hover){
+    transition: .2s;
+}
+#ask-div-control{
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    max-height: 20rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 3rem;
+}
+#select-control{
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    height: 15rem;
+    margin-left: 10rem;
+    overflow-y: hidden;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: -27rem;
+    color: #8B7E74;
+    position: relative;
+}
+
+.wave{
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 63rem;
+    transform: rotateY(180deg);
+}
+.wave {
+    fill: #FFFFFF;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    main{
+        margin: 0 auto;
+    }
+    body{
+        font-size: 2rem;
+    }
+    nav{
+        transform: scale(1,1);
+    }
+    nav> a:nth-child(1){
+        margin-left: 400rem;
+    }
+    nav> a:nth-child(3){
+        margin-right: 400rem;
+    }
+    #form-control{
+        transform: scale(1,1);
+    }
+}
+
+@keyframes element_blink{
+    0%{
+        filter: brightness(130%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+}
+
+@keyframes blink_page{
+    0%{
+        transform: scaleY(80%);
+        opacity: 50%;
+    }
+    75%{
+        transition: 2s;
+        opacity: 70%;
+    }
+    100%{
+        transform: scaleY(100%);
+        opacity: 100%;
+        transition: 2s;
+    }
+}

@@ -51,33 +51,52 @@ p{
     cursor: default;
 }
 nav{
-    transform: scale(.9,.9);
     display: flex;
     justify-content: center;
     animation: blink_page none;
+    transform: scale(.9,.9);
 }
 nav > a{
     display: inline-block;
     cursor: pointer;
     padding: 1rem;
-    border-radius: 0rem 1rem 0rem 0rem;
+    border-radius: 1rem 0rem 0rem 0rem;
     color: #000000;
     margin-top: 2rem;
     letter-spacing: .2rem;
     text-decoration: none;
-    background-color:  rgb(195, 195, 195);
+    background-color: rgb(195, 195, 195);
+    
 }
-nav > a:nth-child(1){
-    border-radius: 1rem 0rem 0rem 0rem;
-    background-color:  aliceblue;
+nav > a:nth-child(2){
+    border-radius: 0rem 0rem 0rem 0rem;
+    background-color: rgb(195, 195, 195);
+    cursor: default;
+}
+nav> a:nth-child(1){
+    margin-left: 40rem;
+    background-color: aliceblue;
     cursor: default;
 }
 nav> a:nth-child(2):hover{
     letter-spacing: .3rem;
     transition: .2s;
     background-color:  aliceblue;
+    cursor: pointer;
 }
 nav > a:nth-child(2):not(nav > a:hover){
+    transition: .2s;
+}
+nav> a:nth-child(3){
+    border-radius: 0rem 1rem 0rem 0rem;
+    margin-right: 40rem;
+}
+nav> a:nth-child(3):hover{
+    letter-spacing: .3rem;
+    transition: .2s;
+    background-color:  aliceblue;
+}
+nav > a:nth-child(3):not(nav > a:hover){
     transition: .2s;
 }
 #form-control{
@@ -167,9 +186,16 @@ img{
     nav{
         transform: scale(1,1);
     }
+    nav> a:nth-child(1){
+        margin-left: 400rem;
+    }
+    nav> a:nth-child(3){
+        margin-right: 400rem;
+    }
     #form-control{
         transform: scale(1,1);
     }
+
 }
 
 
